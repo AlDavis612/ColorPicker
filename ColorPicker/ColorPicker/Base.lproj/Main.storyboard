@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-0Z-ggP">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1L-ev-Xy9">
+                                <rect key="frame" x="187.5" y="418" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cBr-0Z-ggP" firstAttribute="top" secondItem="f1L-ev-Xy9" secondAttribute="bottom" constant="33" id="ELI-59-alJ"/>
+                            <constraint firstItem="cBr-0Z-ggP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GfU-MG-jVi"/>
+                            <constraint firstItem="cBr-0Z-ggP" firstAttribute="centerX" secondItem="f1L-ev-Xy9" secondAttribute="centerX" id="HXN-pj-Cm0"/>
+                            <constraint firstItem="cBr-0Z-ggP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ph3-q4-m7f"/>
+                            <constraint firstItem="f1L-ev-Xy9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dxY-rO-Asn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ColorLabel" destination="f1L-ev-Xy9" id="Ir3-Y1-mwt"/>
+                        <outlet property="PickerView" destination="cBr-0Z-ggP" id="u1S-VE-Jf7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
